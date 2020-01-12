@@ -3,7 +3,7 @@ body{
     background: white;
     padding: 0;
     font-family: Nunito Sans, Arial;
-    width: 1440px;
+    /* width: 1440px; */
     margin: auto;
 }
 body * {
@@ -11,6 +11,17 @@ body * {
 }
 ::-webkit-scrollbar{
     display: none;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url('../fonts/Nunito_Sans.woff'),
+        url('../fonts/Nunito_Sans.ttf');
+}
+@font-face {
+    font-family: "Yeseva One";
+    src: url('../fonts/Yeseva_One.woff'),
+        url('../fonts/Yeseva_One.ttf');
 }
 .container {
     max-width: 1440px;
@@ -71,7 +82,7 @@ body * {
     color: white;
 }
 .hero {
-    background-image: url("../images/image 4.3.svg");
+    background-image: url("../images/image 4.3.jpg");
     background-size: cover;
     height: 707px;
     padding-top: 194px;
@@ -222,7 +233,7 @@ a.selected {
     display: none;
 }
 .img-page2{
-    background-image: url("../images/image 2.1.svg");
+    background-image: url("../images/image 2.1.jpg");
     width: 679px;
     height: 482px;
     position: absolute;
@@ -288,7 +299,7 @@ a.selected {
 }
 .img{
     position: absolute;
-    background-image: url("../images/image 6.svg");
+    background-image: url("../images/image 6.jpg");
     z-index: 1;
     width: 817px;
     height: 434px;
@@ -296,8 +307,8 @@ a.selected {
 .overlay{
     position: absolute;
     background: rgba(0, 0, 0, 0.8);
-    z-index: 2;
-    width: 817px;
+    z-index: 3;
+    width: 817px; 
     height: 434px;
 }
 .bottom-label{
@@ -493,17 +504,17 @@ input.btn{
     margin-top: 31px;
 }
 .rp-img1{
-    background-image: url("../images/Redecorating.svg");
+    background-image: url("../images/Redecorating.jpg");
     width: 392px;
     height: 421px;
 }
 .rp-img2{
-    background-image: url("../images/Overhaul.svg");
+    background-image: url("../images/Overhaul.jpg");
     width: 392px;
     height: 421px;
 }
 .rp-img3{
-    background-image: url("../images/Designer Repair.svg");
+    background-image: url("../images/Designer Repair.jpg");
     width: 392px;
     height: 421px;
 
@@ -569,13 +580,11 @@ input.btn{
     color: #FFFFFF;
 }
 .img-text{
-    background-image: url("../images/image 6.1.svg");
+    background-image: url("../images/image 6.1.jpg");
     width: 703px;
     height: 645px;
-    margin-top: 331px;
     display: flex;
     flex-direction: column;
-    position: absolute;
 }
 .flex{
     display: flex;
@@ -601,6 +610,12 @@ input.btn{
     justify-content: center;
     border: 8px solid #FFFFFF;
 }
+.img-box{
+    margin-top: 311px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
 .flex-text{
     font-family: Nunito Sans;
     font-style: normal;
@@ -612,14 +627,15 @@ input.btn{
     width: 316px;
 }
 .call{
-    position: absolute;
-    margin-top: 417px;
-    margin-left: 834px;
     width: 506px;
     height: 509px;
     background-color: #131313;
     display: flex;
     flex-direction: column;
+    margin-top: 107px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 .call h1{
     font-family: Nunito Sans;
@@ -700,7 +716,7 @@ label input{
 }
 .help{
     width: 440px;
-    margin-top: 965px;
+    margin-top: 9px;
     display: flex;
     flex-direction: row;
     margin-left: 866px;
@@ -735,10 +751,12 @@ label input{
 .photos{
     width: 1440px;
     height: 864px;
-    background-image: url("../images/image 5.1.svg");
+    background: url("../images/image 5.1.jpg");
     position: relative;
     z-index: 1;
     margin-top: 243px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .photos h1{
     font-family: Yeseva One;
@@ -784,13 +802,13 @@ h3.selected{
 .photo1{
     width: 354px;
     height: 349px;
-    background-image: url("../images/image 5.svg");
+    background-image: url("../images/image 5.jpg");
     position: absolute;
     left: 587px;
     top: 555px;
 }
 .photo2{
-    background-image: url("../images/image 5.2.svg");
+    background-image: url("../images/image 5.2.jpg");
     position: absolute;
     width: 354px;
     height: 557px;
@@ -798,7 +816,7 @@ h3.selected{
     left: 587px;
 }
 .photo3{
-    background-image: url("../images/image 5.3.svg");
+    background-image: url("../images/image 5.3.jpg");
     position: absolute;
     top: -112px;
     left: 984px;
@@ -806,7 +824,7 @@ h3.selected{
     height: 275px;
 }
 .photo4{
-    background-image: url("../images/image 5.4.svg");
+    background-image: url("../images/image 5.4.jpg");
     position: absolute;
     left: 984px;
     top: 199px;
@@ -814,7 +832,7 @@ h3.selected{
     height: 624px;
 }
 .vector2{
-    background-image:url("../images/Group 43.svg");
+    background-image:url("../images/Group 43.jpg");
     height: 30px;
     width: 34px;
 }
@@ -866,13 +884,13 @@ h3.clients{
     position: absolute;
 }
 #logo1{
-    background-image: url("../images/image 7.svg");
+    background-image: url("../images/image 7.jpg");
 }
 #logo2{
-    background-image: url("../images/image 7.1.svg");
+    background-image: url("../images/image 7.1.jpg");
 }
 #logo3{
-    background-image: url("../images/image 7-logo3.svg");
+    background-image: url("../images/image 7-logo3.jpg");
 }
 .clients-block h1 {
     font-family: Yeseva One;
@@ -1022,6 +1040,9 @@ h3.clients{
     font-weight: normal;
     line-height: 28px;
 }
+.long-mobile1{
+    visibility: hidden;
+}
 #tel1{
     width: 231px;
     height: 47px;
@@ -1036,9 +1057,11 @@ h3.clients{
     color: white;
 }
 .checkbox1{
-    margin-left: auto;
-    margin-right: auto;
+    left: auto;
+    right: auto;
+    
     width: 280px;
+    /* width: 100%; */
 }
 .checkbox1 label{
     color: white;
@@ -1049,33 +1072,59 @@ h3.clients{
 .gradient{
     background-image: url("../images/Rectangle 9.2.svg");
     height: 953px;
-    width: 1440px;
+    /* width: 1440px; */
     margin-top: -223px;
-    z-index: -1;
+    z-index: 2;
 }
 .city3{
-    background-image: url("../images/image 7.2.svg");
-    height: 100%;
-    margin-top: -73px;
+    background: url("../images/image 7.2.svg") no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 953px;
+    margin-top: -954px;
     z-index: -2;
-    Opacity: 30%
+    position: absolute;
+    right: 0;
 }
 footer{
     background-color: #131313;
 }
-.footer{
-    background-image: url("../images/Group 42.1.png");
-    height: 200px;
-    width: 589px;
-    z-index: 2;
-    position: absolute;
+.group19 {
+    position: relative;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    /* margin-left: auto; */ 
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
-    margin-top: 400px;
+    transform: translate(-50%, -50%); 
+    text-transform: uppercase;
+    top: 360px;
+    width: 590px;
+    color: #E3B873; 
 }
+
+/* .small-img {
+    background-image: url("../images/envelope.svg") no repeat;
+    background-image: url("../images/camera.svg") no repeat;
+    height: 71px;
+    width: 28px;
+    z-index: 2;
+    position: relative;
+    maring-left: auto;
+    transform: translate(-50%, -50%);
+    top: 353px;
+    /* margin-top: 400px; */
+/* } *
+.footer{
+    /* background-image: url("../images/Group 42.1.svg"); */
+    
+/* } */
 .mask{
-    background-image: url("../images/Mask Group.svg");
+    background-image: url("../images/Mask Group.jpg");
     width: 925px;
     height: 465px;
     z-index: 2;
@@ -1083,7 +1132,7 @@ footer{
     left: 49%;
     margin-right: -50%;
     transform: translate(-50%, 0);
-    margin-top: 422px;
+    margin-top: 300px;
 }
 @media screen and (min-device-width: 1301px) {
     .img-page2{
@@ -1154,7 +1203,7 @@ footer{
         height: 1076px;
     }
     .img-page2{
-        background-image: url("../images/image 2.svg");
+        background-image: url("../images/image 2.jpg");
         display: block;
         z-index: 50;
         width: 340px;
@@ -1201,7 +1250,7 @@ footer{
         margin: auto;
     }
     .mobile-img{
-        background-image: url("../images/we-realize.svg");
+        background-image: url("../images/we-realize.jpg");
         height: 242px;
         width: 340px;
         margin-top: 24px;
@@ -1354,13 +1403,14 @@ footer{
 
     footer{
         display: none;
+        background-color: black;
     }
     .gradient{
         width: 100%;
         background-image: none;
         background-color: black;
     }
-    .footer{
+    footer{
         margin-top: 850px;
     }
     .mask{
@@ -1404,24 +1454,26 @@ footer{
         width: 340px;
     }
     .checkbox1{
-        margin-left: 24px;
+        /* margin-left: 24px; */
+        margin-left: auto;
+        margin-right: auto;
         width: 286px;
     }
     .checkbox1 label{
         width: 259px;
     }
     .long-mobile1{
-        display: block;
+        visibility: visible;
         margin-top: 45px;
     }
-    .overlay, .img, .bottom-img{
+     .img, .bottom-img{
         width: 340px;
         height: 207px;
     }
     .bottom-img{
     }
     .img{
-        background-image: url("../images/image 66.svg");
+        background-image: url("../images/image 66.jpg");
     }
     .eclipse{
         height: 37px;
