@@ -53,6 +53,10 @@ body * {
     color: #FFFFFF;
     margin-right: 90px;
 }
+.pg2{
+    width: 1300px;
+    margin: 0 auto;
+}
 .header {
     background-color: #131313;
 }
@@ -112,7 +116,8 @@ body * {
 .hero-container {
     position: relative;
     z-index: 1;
-    margin-left: 134px;
+    margin: 0 auto;
+    width: 1300px;
 }
 .title {
     margin: 0;
@@ -198,7 +203,6 @@ body * {
     text-align: left;
     grid-template-columns: 150px 150px;
     grid-template-rows: 73px 73px;
-    margin-left: 134px;
     margin-top: 42px;
     grid-gap: 34px;
 }
@@ -238,12 +242,10 @@ a.selected {
     height: 482px;
     position: absolute;
     margin-top: 52px;
-
  }
 .menu-bottom{
     position: relative;
     margin-top: 80px;
-    margin-left: 134px;
     display: flex;
     flex-direction: row;
 }
@@ -440,7 +442,6 @@ input.btn{
     display: flex;
     flex-direction: row;
 }
-
 .checkbox label{
     font-family: Nunito Sans;
     font-style: normal;
@@ -633,9 +634,12 @@ input.btn{
     display: flex;
     flex-direction: column;
     margin-top: 107px;
+    position: relative;
+}
+.call-box{
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+    width: 506px;
 }
 .call h1{
     font-family: Nunito Sans;
@@ -648,7 +652,6 @@ input.btn{
     width: 297px;
     margin-left: auto;
     margin-right: auto;
-
 }
 .inp1 label{
     display: flex;
@@ -716,10 +719,9 @@ label input{
 }
 .help{
     width: 440px;
-    margin-top: 9px;
     display: flex;
     flex-direction: row;
-    margin-left: 866px;
+    margin-top: 38px;
 }
 .pig{
     height: 72px;
@@ -903,7 +905,6 @@ h3.clients{
     position: absolute;
     margin-top: 41px;
     margin-left: 119px;
-
 }
 .clients-block h3{
     font-family: Nunito Sans;
@@ -1059,9 +1060,7 @@ h3.clients{
 .checkbox1{
     left: auto;
     right: auto;
-    
     width: 280px;
-    /* width: 100%; */
 }
 .checkbox1 label{
     color: white;
@@ -1072,7 +1071,6 @@ h3.clients{
 .gradient{
     background-image: url("../images/Rectangle 9.2.svg");
     height: 953px;
-    /* width: 1440px; */
     margin-top: -223px;
     z-index: 2;
 }
@@ -1097,32 +1095,14 @@ footer{
     font-size: 20px;
     line-height: 28px;
     text-align: center;
-    /* margin-left: auto; */ 
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
     text-transform: uppercase;
-    top: 360px;
+    top: 320px;
     width: 590px;
     color: #E3B873; 
 }
-
-/* .small-img {
-    background-image: url("../images/envelope.svg") no repeat;
-    background-image: url("../images/camera.svg") no repeat;
-    height: 71px;
-    width: 28px;
-    z-index: 2;
-    position: relative;
-    maring-left: auto;
-    transform: translate(-50%, -50%);
-    top: 353px;
-    /* margin-top: 400px; */
-/* } *
-.footer{
-    /* background-image: url("../images/Group 42.1.svg"); */
-    
-/* } */
 .mask{
     background-image: url("../images/Mask Group.jpg");
     width: 925px;
@@ -1138,9 +1118,6 @@ footer{
     .img-page2{
         margin-left: 626px;
     }
-    .title1{
-        margin-left: 134px;
-    }
     .title-text1{
         width: 442px;
     }
@@ -1150,6 +1127,9 @@ footer{
 }
 @media screen and (max-device-width: 1300px) {
     body{
+        width: 100%;
+    }
+    .pg2{
         width: 100%;
     }
     .logo{
@@ -1162,6 +1142,12 @@ footer{
         min-width: 90%;
         margin-top: 26px;
     }
+    .submit{
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    }
     .button-call{
         display: none;
     }
@@ -1172,12 +1158,18 @@ footer{
         font-size: 23px;
         line-height: 132.83%;
     }
+    .hero-container{
+        width: 95%;
+    }
+    .hero-container .button, .hero-container .button-submit{
+        width: 100%;
+        margin-right: 0;
+    }
     .title-text{
         font-size: 14px;
         line-height: 135.84%;
     }
     .title1{
-        /*display: inline-block;*/
         text-align: center;
         margin-top: -108px;
    }
@@ -1213,8 +1205,6 @@ footer{
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, 0);
-    }
-    h2.title{
     }
     #grid{
         margin-top: 314px;
@@ -1265,7 +1255,6 @@ footer{
     .img-text{
         display: none;
     }
-
     .wrapper {
         background-color: #131313;
         padding-bottom: 50px;
@@ -1282,9 +1271,7 @@ footer{
         line-height: 169.8%;
         text-align: center;
         color: #FFFFFF;
-        /*margin-left: 18px;*/
         width: 80%;
-        /*margin-top: 58px;*/
         padding-top: 21px;
         padding-bottom: 61px;
     }
@@ -1354,7 +1341,7 @@ footer{
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
         position: absolute;
     }
-    .page3 .call{
+    .call{
         display-none;
     }
     .help{
@@ -1388,11 +1375,12 @@ footer{
     }
     .submit1{
         width: 90%;
-        margin-top: 530px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 619px;
         position: absolute;
         top: 0; left: 0; bottom: 0; right: 0;
+        left: 50%;
     }
     .city{
         display: none;
@@ -1400,7 +1388,6 @@ footer{
     .city3{
         display: none;
     }
-
     footer{
         display: none;
         background-color: black;
@@ -1449,10 +1436,6 @@ footer{
         position: absolute;
         opacity: 0;
     }
-    .submit1{
-        margin-top: 619px;
-        width: 340px;
-    }
     .checkbox1{
         /* margin-left: 24px; */
         margin-left: auto;
@@ -1469,8 +1452,6 @@ footer{
      .img, .bottom-img{
         width: 340px;
         height: 207px;
-    }
-    .bottom-img{
     }
     .img{
         background-image: url("../images/image 66.jpg");
