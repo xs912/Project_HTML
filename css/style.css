@@ -357,7 +357,7 @@ a.selected {
 }
 .polygon{
     position: absolute;
-    background-image: url("../images/polygon.svg");
+    background-image: url("../images/Polygon.svg");
     z-index: 4;
     height: 26px;
     width: 21px;
@@ -979,7 +979,7 @@ h3.clients{
 }
 .city1{
     width: 720px;
-    background-image: url("../images/frame.jpg");
+    background-image: url("../images/frame.svg");
     height: 776px;
     position: absolute;
     z-index: -1;
@@ -987,7 +987,7 @@ h3.clients{
 }
 .city2{
     width: 720px;
-    background-image: url("../images/frame.jpg");
+    background-image: url("../images/frame.svg");
     height: 777px;
     position: absolute;
     z-index: -1;
@@ -1499,7 +1499,7 @@ footer{
         width: 37px;
     }
     .polygon{
-        background-image: url("../images/polygon2.svg");
+        background-image: url("../images/Polygon2.svg");
         height: 10px;
         width: 10px;
         margin-left: 2px;
