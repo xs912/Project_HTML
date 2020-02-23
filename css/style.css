@@ -3,7 +3,7 @@ body{
     background: white;
     padding: 0;
     font-family: Nunito Sans, Arial;
-    width: 1440px;
+    /* width: 1440px; */
     margin: auto;
 }
 body * {
@@ -11,6 +11,17 @@ body * {
 }
 ::-webkit-scrollbar{
     display: none;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url('../fonts/Nunito_Sans.woff'),
+        url('../fonts/Nunito_Sans.ttf');
+}
+@font-face {
+    font-family: "Yeseva One";
+    src: url('../fonts/Yeseva_One.woff'),
+        url('../fonts/Yeseva_One.ttf');
 }
 .container {
     max-width: 1440px;
@@ -41,6 +52,11 @@ body * {
     text-align: center;
     color: #FFFFFF;
     margin-right: 90px;
+    cursor: pointer;
+}
+.pg2{
+    width: 1300px;
+    margin: 0 auto;
 }
 .header {
     background-color: #131313;
@@ -71,7 +87,7 @@ body * {
     color: white;
 }
 .hero {
-    background-image: url("../images/image 4.3.svg");
+    background-image: url("../images/image 4.3.jpg");
     background-size: cover;
     height: 707px;
     padding-top: 194px;
@@ -101,7 +117,8 @@ body * {
 .hero-container {
     position: relative;
     z-index: 1;
-    margin-left: 134px;
+    margin: 0 auto;
+    width: 1300px;
 }
 .title {
     margin: 0;
@@ -137,6 +154,7 @@ body * {
     padding: 13px 33px;
     text-transform: uppercase;
     margin-right: 90px;
+    cursor: pointer;
 }
 .title-text1 {
     font-family: Nunito Sans;
@@ -183,14 +201,12 @@ body * {
     letter-spacing: -0.07em;
 }
 #grid{
-    display: grid;
+    display: flex;
+    flex-direction: row;
     text-align: left;
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 73px 73px;
-    margin-left: 134px;
     margin-top: 42px;
-    grid-gap: 34px;
 }
+
 #grid h3{
     font-family: Yeseva One;
     font-style: normal;
@@ -222,7 +238,7 @@ a.selected {
     display: none;
 }
 .img-page2{
-    background-image: url("../images/image 2.1.svg");
+    background-image: url("../images/image 2.1.jpg");
     width: 679px;
     height: 482px;
     position: absolute;
@@ -232,7 +248,6 @@ a.selected {
 .menu-bottom{
     position: relative;
     margin-top: 80px;
-    margin-left: 134px;
     display: flex;
     flex-direction: row;
 }
@@ -257,17 +272,16 @@ a.selected {
 }
 .circles{
     position: relative;
-    margin-left: 70px;
-    width: 65px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 17px;
+    margin-left: 53px;
+    display: flex;
+    justify-content: center;
 }
 .circle{
     width: 10px;
     height: 10px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.3);
+    margin-left: 17px;
 }
 .circle-selected{
     background-color: white;
@@ -288,7 +302,7 @@ a.selected {
 }
 .img{
     position: absolute;
-    background-image: url("../images/image 6.svg");
+    background-image: url("../images/image 6.jpg");
     z-index: 1;
     width: 817px;
     height: 434px;
@@ -296,8 +310,8 @@ a.selected {
 .overlay{
     position: absolute;
     background: rgba(0, 0, 0, 0.8);
-    z-index: 2;
-    width: 817px;
+    z-index: 3;
+    width: 817px; 
     height: 434px;
 }
 .bottom-label{
@@ -343,11 +357,12 @@ a.selected {
 }
 .polygon{
     position: absolute;
-    background-image: url("../images/polygon.svg");
+    background-image: url("../images/Polygon.svg");
     z-index: 4;
     height: 26px;
     width: 21px;
     margin-left: 2px;
+    cursor: pointer;
 }
 .page3 .line1{
     width: 55px;
@@ -419,6 +434,7 @@ input.btn{
     text-transform: uppercase;
     color: white;
     border: none;
+    cursor: pointer;
 }
 .checkbox{
     position: relative;
@@ -429,7 +445,9 @@ input.btn{
     display: flex;
     flex-direction: row;
 }
-
+::before{
+    cursor: pointer;
+}
 .checkbox label{
     font-family: Nunito Sans;
     font-style: normal;
@@ -493,17 +511,17 @@ input.btn{
     margin-top: 31px;
 }
 .rp-img1{
-    background-image: url("../images/Redecorating.svg");
+    background-image: url("../images/Redecorating.jpg");
     width: 392px;
     height: 421px;
 }
 .rp-img2{
-    background-image: url("../images/Overhaul.svg");
+    background-image: url("../images/Overhaul.jpg");
     width: 392px;
     height: 421px;
 }
 .rp-img3{
-    background-image: url("../images/Designer Repair.svg");
+    background-image: url("../images/Designer Repair.jpg");
     width: 392px;
     height: 421px;
 
@@ -569,13 +587,12 @@ input.btn{
     color: #FFFFFF;
 }
 .img-text{
-    background-image: url("../images/image 6.1.svg");
+    background-image: url("../images/image 6.1.jpg");
     width: 703px;
     height: 645px;
-    margin-top: 331px;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    margin-left: auto;
 }
 .flex{
     display: flex;
@@ -601,6 +618,12 @@ input.btn{
     justify-content: center;
     border: 8px solid #FFFFFF;
 }
+.img-box{
+    margin-top: 311px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
 .flex-text{
     font-family: Nunito Sans;
     font-style: normal;
@@ -611,15 +634,24 @@ input.btn{
     margin-left: 17px;
     width: 316px;
 }
+.ph-box{
+    margin: 0 auto;
+    width: 1440px;
+    position: relative;
+}
 .call{
-    position: absolute;
-    margin-top: 417px;
-    margin-left: 834px;
     width: 506px;
     height: 509px;
     background-color: #131313;
     display: flex;
     flex-direction: column;
+    margin-top: 107px;
+    position: relative;
+}
+.call-box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 506px;
 }
 .call h1{
     font-family: Nunito Sans;
@@ -693,6 +725,10 @@ label input{
     position: absolute;
     top: 431px;
     left: 244px;
+    cursor: pointer;
+}
+.submit input{
+    cursor: pointer;
 }
 #check2{
     margin-top: 18px;
@@ -700,10 +736,9 @@ label input{
 }
 .help{
     width: 440px;
-    margin-top: 965px;
     display: flex;
     flex-direction: row;
-    margin-left: 866px;
+    margin-top: 38px;
 }
 .pig{
     height: 72px;
@@ -733,12 +768,15 @@ label input{
     text-shadow: 0 3px 10px rgba(227, 184, 115, 0.15);
 }
 .photos{
-    width: 1440px;
+    width: 100%;
     height: 864px;
-    background-image: url("../images/image 5.1.svg");
+    background: url("../images/image 5.1.jpg") no-repeat;
+    background-size: cover;
     position: relative;
     z-index: 1;
     margin-top: 243px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .photos h1{
     font-family: Yeseva One;
@@ -754,26 +792,26 @@ label input{
 }
 .overlay1{
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 864px;
     background: linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
     z-index: 2;
 }
-.grid1{
+.flex1{
     margin-left: 99px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 25px;
-    grid-template-rows: repeat(11, 26px);
+    display: flex;
+    flex-direction: column;
 }
-.grid1 h3{
+.flex1 h3{
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 38px;
     color: #FFFFFF;
-    margin: 0;
+    margin-top: 25px;
+    height: 26px;
+    margin-bottom: 0;
 }
 h3.selected{
     color: #E3B873;
@@ -784,13 +822,13 @@ h3.selected{
 .photo1{
     width: 354px;
     height: 349px;
-    background-image: url("../images/image 5.svg");
+    background-image: url("../images/image 5.jpg");
     position: absolute;
     left: 587px;
     top: 555px;
 }
 .photo2{
-    background-image: url("../images/image 5.2.svg");
+    background-image: url("../images/image 5.2.jpg");
     position: absolute;
     width: 354px;
     height: 557px;
@@ -798,7 +836,7 @@ h3.selected{
     left: 587px;
 }
 .photo3{
-    background-image: url("../images/image 5.3.svg");
+    background-image: url("../images/image 5.3.jpg");
     position: absolute;
     top: -112px;
     left: 984px;
@@ -806,7 +844,7 @@ h3.selected{
     height: 275px;
 }
 .photo4{
-    background-image: url("../images/image 5.4.svg");
+    background-image: url("../images/image 5.4.jpg");
     position: absolute;
     left: 984px;
     top: 199px;
@@ -815,7 +853,7 @@ h3.selected{
 }
 .vector2{
     background-image:url("../images/Group 43.svg");
-    height: 30px;
+    height: 21px;
     width: 34px;
 }
 h1.clients{
@@ -866,13 +904,13 @@ h3.clients{
     position: absolute;
 }
 #logo1{
-    background-image: url("../images/image 7.svg");
+    background-image: url("../images/image 7.jpg");
 }
 #logo2{
-    background-image: url("../images/image 7.1.svg");
+    background-image: url("../images/image 7.1.jpg");
 }
 #logo3{
-    background-image: url("../images/image 7-logo3.svg");
+    background-image: url("../images/image 7-logo3.jpg");
 }
 .clients-block h1 {
     font-family: Yeseva One;
@@ -947,7 +985,7 @@ h3.clients{
 }
 .city1{
     width: 720px;
-    background-image: url("../images/frame.jpg");
+    background-image: url("../images/frame.svg");
     height: 776px;
     position: absolute;
     z-index: -1;
@@ -955,7 +993,7 @@ h3.clients{
 }
 .city2{
     width: 720px;
-    background-image: url("../images/frame.jpg");
+    background-image: url("../images/frame.svg");
     height: 777px;
     position: absolute;
     z-index: -1;
@@ -1022,6 +1060,9 @@ h3.clients{
     font-weight: normal;
     line-height: 28px;
 }
+.long-mobile1{
+    visibility: hidden;
+}
 #tel1{
     width: 231px;
     height: 47px;
@@ -1036,9 +1077,11 @@ h3.clients{
     color: white;
 }
 .checkbox1{
-    margin-left: auto;
-    margin-right: auto;
+    left: auto;
+    right: auto;
+    
     width: 280px;
+    /* width: 100%; */
 }
 .checkbox1 label{
     color: white;
@@ -1049,33 +1092,59 @@ h3.clients{
 .gradient{
     background-image: url("../images/Rectangle 9.2.svg");
     height: 953px;
-    width: 1440px;
+    /* width: 1440px; */
     margin-top: -223px;
-    z-index: -1;
+    z-index: 2;
 }
 .city3{
-    background-image: url("../images/image 7.2.svg");
-    height: 100%;
-    margin-top: -73px;
+    background: url("../images/image 7.2.svg") no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 953px;
+    margin-top: -954px;
     z-index: -2;
-    Opacity: 30%
+    position: absolute;
+    right: 0;
 }
 footer{
     background-color: #131313;
 }
-.footer{
-    background-image: url("../images/Group 42.1.png");
-    height: 200px;
-    width: 589px;
-    z-index: 2;
-    position: absolute;
+.group19 {
+    position: relative;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    /* margin-left: auto; */ 
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
-    margin-top: 400px;
+    transform: translate(-50%, -50%); 
+    text-transform: uppercase;
+    top: 360px;
+    width: 590px;
+    color: #E3B873; 
 }
+
+/* .small-img {
+    background-image: url("../images/envelope.svg") no repeat;
+    background-image: url("../images/camera.svg") no repeat;
+    height: 71px;
+    width: 28px;
+    z-index: 2;
+    position: relative;
+    maring-left: auto;
+    transform: translate(-50%, -50%);
+    top: 353px;
+    /* margin-top: 400px; */
+/* } *
+.footer{
+    /* background-image: url("../images/Group 42.1.svg"); */
+    
+/* } */
 .mask{
-    background-image: url("../images/Mask Group.svg");
+    background-image: url("../images/Mask Group.jpg");
     width: 925px;
     height: 465px;
     z-index: 2;
@@ -1083,14 +1152,11 @@ footer{
     left: 49%;
     margin-right: -50%;
     transform: translate(-50%, 0);
-    margin-top: 422px;
+    margin-top: 300px;
 }
 @media screen and (min-device-width: 1301px) {
     .img-page2{
         margin-left: 626px;
-    }
-    .title1{
-        margin-left: 134px;
     }
     .title-text1{
         width: 442px;
@@ -1101,6 +1167,9 @@ footer{
 }
 @media screen and (max-device-width: 1300px) {
     body{
+        width: 100%;
+    }
+    .pg2{
         width: 100%;
     }
     .logo{
@@ -1122,6 +1191,13 @@ footer{
     .hero .title{
         font-size: 23px;
         line-height: 132.83%;
+    }
+    .hero-container{
+        width: 95%;
+    }
+    .hero-container .button, .hero-container .button-submit{
+        width: 100%;
+        margin-right: 0;
     }
     .title-text{
         font-size: 14px;
@@ -1154,7 +1230,7 @@ footer{
         height: 1076px;
     }
     .img-page2{
-        background-image: url("../images/image 2.svg");
+        background-image: url("../images/image 2.jpg");
         display: block;
         z-index: 50;
         width: 340px;
@@ -1164,8 +1240,6 @@ footer{
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, 0);
-    }
-    h2.title{
     }
     #grid{
         margin-top: 314px;
@@ -1201,7 +1275,7 @@ footer{
         margin: auto;
     }
     .mobile-img{
-        background-image: url("../images/we-realize.svg");
+        background-image: url("../images/we-realize.jpg");
         height: 242px;
         width: 340px;
         margin-top: 24px;
@@ -1354,19 +1428,20 @@ footer{
 
     footer{
         display: none;
+        background-color: black;
     }
     .gradient{
         width: 100%;
         background-image: none;
         background-color: black;
     }
-    .footer{
+    footer{
         margin-top: 850px;
     }
     .mask{
         margin-top: 250px;
     }
-    .grid1{
+    .flex1{
      display: none;
     }
     .call2 label{
@@ -1404,31 +1479,33 @@ footer{
         width: 340px;
     }
     .checkbox1{
-        margin-left: 24px;
+        /* margin-left: 24px; */
+        margin-left: auto;
+        margin-right: auto;
         width: 286px;
     }
     .checkbox1 label{
         width: 259px;
     }
     .long-mobile1{
-        display: block;
+        visibility: visible;
         margin-top: 45px;
     }
-    .overlay, .img, .bottom-img{
+     .img, .bottom-img{
         width: 340px;
         height: 207px;
     }
     .bottom-img{
     }
     .img{
-        background-image: url("../images/image 66.svg");
+        background-image: url("../images/image 66.jpg");
     }
     .eclipse{
         height: 37px;
         width: 37px;
     }
     .polygon{
-        background-image: url("../images/polygon2.svg");
+        background-image: url("../images/Polygon2.svg");
         height: 10px;
         width: 10px;
         margin-left: 2px;
