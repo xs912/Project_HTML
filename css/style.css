@@ -93,7 +93,12 @@ body * {
     padding-top: 194px;
     position: relative;
 }
-
+.btn-slide{
+    display: none;
+    background-image: url(../images/btn-slide.svg);
+    width: 36px;
+    height: 36px;
+}
 .hero-overlay {
     content: '';
     position: absolute;
@@ -225,6 +230,10 @@ body * {
     line-height: 21px;
     color: #FFFFFF;
     margin-top: -9px;
+    width: 100px;
+}
+.area{
+    padding-bottom: 16px;
 }
 .page2 a{
     color: rgba(255, 255, 255, 0.3)
@@ -244,6 +253,9 @@ a.selected {
     position: absolute;
     margin-top: 52px;
 
+ }
+ .button-submit-no{
+    display: none;
  }
 .menu-bottom{
     position: relative;
@@ -367,7 +379,7 @@ a.selected {
 .page3 .line1{
     width: 55px;
     height: 1px;
-    margin-top: 62px;
+    margin-top: 48px;
     background-color: #E3B873;
     margin-left: auto;
     margin-right: auto;
@@ -518,7 +530,7 @@ input.btn{
 .rp-img2{
     background-image: url("../images/Overhaul.jpg");
     width: 392px;
-    height: 421px;
+    height: 440px;
 }
 .rp-img3{
     background-image: url("../images/Designer Repair.jpg");
@@ -592,7 +604,6 @@ input.btn{
     height: 645px;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
 }
 .flex{
     display: flex;
@@ -633,11 +644,6 @@ input.btn{
     color: #363636;
     margin-left: 17px;
     width: 316px;
-}
-.ph-box{
-    margin: 0 auto;
-    width: 1440px;
-    position: relative;
 }
 .call{
     width: 506px;
@@ -813,6 +819,7 @@ label input{
     height: 26px;
     margin-bottom: 0;
 }
+
 h3.selected{
     color: #E3B873;
     border-bottom: solid 1px #E3B873;
@@ -1173,14 +1180,41 @@ footer{
         width: 100%;
     }
     .logo{
-        padding-left: 18px;
+        margin-left: 18px;
+    }
+    .hero {
+        padding-top: 85px;
+    }
+    .header-navigation_item{
+        margin-right: 18px;
     }
     .button{
         min-width: 90%;
-     }
+        margin-top: 32px;
+        height: 51px;
+    }
     .button-submit{
-        min-width: 90%;
+        display: none;
+    }
+    .button-submit-no{
+        display: block;
+        border: 1px solid #8e8e8e;
+        box-sizing: border-box;
+        border-radius: 2px;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: rgba(0, 120, 201, 0);
+        outline: 0;
+        text-transform: uppercase;
+        cursor: pointer;
+        min-width: 100%;
         margin-top: 26px;
+        height: 51px;
+        margin-right: 0;
     }
     .button-call{
         display: none;
@@ -1188,18 +1222,25 @@ footer{
     .response{
         display: none;
     }
+    .hero{
+        height: 476px;
+    }
     .hero .title{
         font-size: 23px;
         line-height: 132.83%;
     }
     .hero-container{
         width: 95%;
+        padding-left: 18px;    
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .hero-container .button, .hero-container .button-submit{
         width: 100%;
         margin-right: 0;
     }
     .title-text{
+        margin-top: 16px;
         font-size: 14px;
         line-height: 135.84%;
     }
@@ -1211,6 +1252,7 @@ footer{
     .title1 .title{
         font-size: 22px;
         line-height: 138.6%;
+        width: 225px;
         letter-spacing: -0.07em;
         margin-top: 36px;
         text-align: center;
@@ -1221,13 +1263,14 @@ footer{
     .title-text1{
         font-size: 11px;
         line-height: 158.48%;
+        margin-top: 22px;
         text-align: center;
         width: 311px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 32px;
+        margin-right: 32px;
     }
     .page2{
-        height: 1076px;
+        height: 1026px;
     }
     .img-page2{
         background-image: url("../images/image 2.jpg");
@@ -1246,6 +1289,21 @@ footer{
         justify-content: center;
         margin-left: 0;
     }
+
+    #grid h3{
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #E3B873;
+        width: 144px;
+        margin-left: 0px;
+    }
+    #grid p{
+        font-size: 11px;
+        line-height: 15px;
+        margin-left: 0px;
+        width: 90px;
+    }
     .menu-bottom{
         display: none;
     }
@@ -1258,9 +1316,40 @@ footer{
     section .page3 {
         background-color: white;
     }
+    .page3 .line1{
+        margin-top: 28px;
+        position: relative;
+        z-index: 99;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .overlay{
+        position: relative;
+        width: 340px; 
+        height: 207px;
+    }
+    .checkbox {
+        padding-left: 18px;
+    }
+    .rp-img1{
+        width: 340px;
+        /* height: 421px; */
+        margin-left: 18px;
+    }
+    .rp-img2{
+        width: 340px;
+        /* height: 440px; */
+        margin-left: 18px;
+    }
+    .rp-img3{
+        width: 340px;
+        height: 421px;
+        margin-left: 18px;
+        }
+
     .hidden{
         display: block;
-        margin-top: 200px;
+        margin-top: -110px;
      }
     .hidden h1{
         font-family: Yeseva One;
@@ -1271,11 +1360,11 @@ footer{
         text-align: center;
         text-transform: uppercase;
         color: #E3B873;
-        width: 340px;
+        width: 310px;
         margin: auto;
     }
     .mobile-img{
-        background-image: url("../images/we-realize.jpg");
+        background-image: url("../images/image 5.31.jpg");
         height: 242px;
         width: 340px;
         margin-top: 24px;
@@ -1293,15 +1382,9 @@ footer{
 
     .wrapper {
         background-color: #131313;
-        padding-bottom: 50px;
+         padding-bottom: 85px;
     }
-    .page3 .line1{
-        position: relative;
-        z-index: 99;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 62px;
-    }
+    
     .page3 h2{
         font-size: 11px;
         line-height: 169.8%;
@@ -1310,7 +1393,7 @@ footer{
         /*margin-left: 18px;*/
         width: 80%;
         /*margin-top: 58px;*/
-        padding-top: 21px;
+        
         padding-bottom: 61px;
     }
     .inp-box{
@@ -1344,13 +1427,14 @@ footer{
     .checkbox label{
         line-height: 163.68%;
         color: #FFFFFF;
+        
     }
     input.btn{
         width: 90%;
         height: 51px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 85px;
+        margin-top: 115px;
         position: absolute;
     }
     .label2{
@@ -1375,12 +1459,12 @@ footer{
         width: 270px;
         height: 260px;
         margin-top: 223px;
-        margin-left: 31px;
+        margin-left: 0px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
         position: absolute;
     }
     .page3 .call{
-        display-none;
+        display: none;
     }
     .help{
         display: none;
@@ -1392,7 +1476,8 @@ footer{
         display: none;
     }
     .bottom-label{
-        margin-top: 36px;
+        margin-top: 57px;
+       
     }
     .bottom-label2{
         display: none;
@@ -1407,9 +1492,22 @@ footer{
         width: 100%;
         display: block;
         flex-direction: column;
-        margin-top: -120px;
+        margin-top: -130px;
         padding-top: 170px;
         height: 600px;
+    }
+    .btn-slide-right{
+        display: block;
+        position: absolute;
+        top: 103px;
+        right: 13px;
+    }
+    .btn-slide-left{
+        display: block;
+        position: absolute;
+        top: 103px;
+        left: 13px;
+        transform: rotate(180deg);
     }
     .submit1{
         width: 90%;
@@ -1434,12 +1532,20 @@ footer{
         width: 100%;
         background-image: none;
         background-color: black;
+        height: 750px;
+        margin-top: -223px;
     }
     footer{
         margin-top: 850px;
     }
     .mask{
-        margin-top: 250px;
+        margin-top: 115px;
+        width: 340px;
+        height: 260px;
+    }
+    .small-img{
+        width: 39px;
+        height: 39px;
     }
     .flex1{
      display: none;
@@ -1495,10 +1601,18 @@ footer{
         width: 340px;
         height: 207px;
     }
-    .bottom-img{
+
+    .group19 {
+        font-size: 18px;
+        line-height: 25px;
+        top: 620px;
+        width: 340px;
+
     }
+    
     .img{
         background-image: url("../images/image 66.jpg");
+    
     }
     .eclipse{
         height: 37px;
