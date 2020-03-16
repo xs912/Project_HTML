@@ -1156,7 +1156,7 @@ footer{
     height: 465px;
     z-index: 2;
     position: absolute;
-    left: 49%;
+    left: 50%;
     margin-right: -50%;
     transform: translate(-50%, 0);
     margin-top: 300px;
